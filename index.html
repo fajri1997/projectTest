@@ -3,6 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: pink;
+        font-size: larger;
+        left: 0cqmax;
+      }
+      h1 {
+        color: firebrick;
+        font-family: courier;
+      }
+      p {
+        color: blue;
+        /* border: 12px solid powderblue;--> */
+        padding: 5px;
+      }
+      a {
+        color: red;
+        margin: 10px; /*this will give space + ===> text*/
+      }
+      /*Use the HTML style attribute for inline styling
+       Use the HTML <style> element to define internal CSS
+       Use the HTML <link> element to refer to an external CSS file
+      Use the HTML <head> element to store <style> and <link> elements
+      Use the CSS color property for text colors
+      Use the CSS font-family property for text fonts
+      Use the CSS font-size property for text sizes
+      Use the CSS border property for borders
+      Use the CSS padding property for space inside the border
+      Use the CSS margin property for space outside the border    */
+    </style>
     <title>project testing</title>
   </head>
   <body>
@@ -31,7 +61,46 @@
     -->
     <h1 style="text-align: center">Centered Heading</h1>
     <p style="text-align: center">Centered paragraph.</p>
+    <p>
+      <a
+        style="color: rebeccapurple"
+        href="https://www.w3schools.com/"
+        target="_top"
+        >here
+      </a>
+    </p>
+    <p>
+      <a style="color: green" href="https://www.w3schools.com/" target="_blank"
+        >here
+      </a>
+    </p>
+    <p>
+      <a style="color: gray" href="https://www.w3schools.com/">here </a>
+    </p>
+    <p>
+      <a style="color: blue" href="https://www.w3schools.com/">here </a>
+    </p>
+    <a href="mailto:test@test.com">Send Email</a
+    ><!--so here well send email to test@test.com cos we used href="mailto: -->
+    <a
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=example@example.com&cc=another@example.com&bcc=test@example.com&su=Hello&body=This%20is%20the%20body%20of%20the%20email."
+      target="_blank"
+      >Send Email via Gmail</a
+    ><!--view=cm&fs=1: Opens the Gmail compose window in full-screen   mode.
+    to=example@example.com: Sets the primary recipient.
+    cc=another@example.com: Adds a CC (carbon copy) recipient.
+    bcc=hidden@example.com: Adds a BCC (blind carbon copy) recipient.
+    su=Hello: Sets the subject of the email to "Hello".
+    body=This%20is%20the%20body%20of%20the%20email.: Sets the body text of the email (note the use of %20 to encode spaces).-->
 
+    <!--so here well send email to test@test.com cos we used href="mailto: -->
+
+    <!-- Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program-->
+    <p></p>
     <p style="font-family: verdana">this is paragraph</p>
     <p>
       test the <br />
@@ -75,8 +144,11 @@ The title attribute defines some extra information about an element-->
     The <hr> element is used to separate content (or define a change) in an HTML page:-->
 
     <br /><br /><br />
-    <q>here about manchester</q>
-    <blockquote cite="https://www.visitmanchester.com">
+    <q style="border: 2px solid green">here about manchester</q>
+    <blockquote
+      style="border: 9px solid Tomato"
+      cite="https://www.visitmanchester.com"
+    >
       Manchester, a vibrant city in northwest England, is renowned for its rich
       industrial heritage and dynamic cultural scene. As the birthplace of the
       Industrial Revolution, it boasts iconic landmarks such as the Science and
@@ -88,7 +160,7 @@ The title attribute defines some extra information about an element-->
       reputation as a center for education and innovation.
     </blockquote>
     <abbr> University of Manchester</abbr>
-    <address>
+    <address style="color: DodgerBlue">
       Manchester<br />
       salford
     </address>
