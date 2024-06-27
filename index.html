@@ -19,8 +19,20 @@
         padding: 5px;
       }
       a {
-        color: red;
+        background-color: #f44336;
+
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+
+        display: inline-block;
+
         margin: 10px; /*this will give space + ===> text*/
+      }
+      a:hover,
+      a:active {
+        background-color: rgb(0, 64, 255);
       }
       /*Use the HTML style attribute for inline styling
        Use the HTML <style> element to define internal CSS
@@ -59,7 +71,7 @@
     Use <font-size> for text sizes
     Use <text-align> for text alignment
     -->
-    <h1 style="text-align: center">Centered Heading</h1>
+    <h1 id="CenteredHeading" style="text-align: center">Centered Heading</h1>
     <p style="text-align: center">Centered paragraph.</p>
     <p>
       <a
@@ -86,7 +98,10 @@
       href="https://mail.google.com/mail/?view=cm&fs=1&to=example@example.com&cc=another@example.com&bcc=test@example.com&su=Hello&body=This%20is%20the%20body%20of%20the%20email."
       target="_blank"
       >Send Email via Gmail</a
-    ><!--view=cm&fs=1: Opens the Gmail compose window in full-screen   mode.
+    >
+    <p><a href="#C4">Jump to Chapter 4</a></p>
+
+    <!--view=cm&fs=1: Opens the Gmail compose window in full-screen   mode.
     to=example@example.com: Sets the primary recipient.
     cc=another@example.com: Adds a CC (carbon copy) recipient.
     bcc=hidden@example.com: Adds a BCC (blind carbon copy) recipient.
@@ -164,6 +179,8 @@ The title attribute defines some extra information about an element-->
       Manchester<br />
       salford
     </address>
+    <h2 id="C4">Chapter 4</h2>
+    <p><a href="#CenteredHeading">Go back to Centered Heading</a></p>
 
     <!--so to use arabic and right we use  ar but to use lang to make web rocnise other then english -->
     <h1 lang="ar" dir="rtl">هذا فقرة باللغة العربية.</h1>
